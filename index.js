@@ -34,7 +34,7 @@
 // O(a*b)
 
 // ==== solusion number 2 ===
-const array1 = [ 'a', 'b', 'c', 'p'];
+const array1 = [ 'a', 'b', 'x'];
 const array2 = ['z', 'y', 'x'];
 
 function containsCommonItem2(arr1, arr2){
@@ -58,5 +58,13 @@ function containsCommonItem2(arr1, arr2){
   return false;
 }
 
-containsCommonItem2(array1, array2);
+// containsCommonItem2(array1, array2);
 // O(a+b) Time Complexiity
+
+// === solusi 3 ===
+function containsCommonItem3(arr1, arr2){
+  console.log(arr1.some(item => arr2.includes(item)));
+  return arr1.some(item => arr2.includes(item));
+  
+}
+containsCommonItem3(array1, array2);
